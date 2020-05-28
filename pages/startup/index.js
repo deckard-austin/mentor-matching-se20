@@ -30,6 +30,7 @@ const MentorList = () => {
   // if (data.length === 0) return <div>No mentors found.</div>;
   // // Otherwise return a list of mentors and a button to manually refetch the mentors.
 
+  // I know this is incorrectly mapping through, just trying to access the records from the API
   return (
     <div>
       <div>
