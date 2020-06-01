@@ -20,11 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/next/dist/pages/_error": [
+    "/mentor/[mentor-id]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/startup": [
+    "/startup/[startupid]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

@@ -5,9 +5,9 @@ const base = new Airtable({ apiKey: 'keyqNRJIfyYYszvny' }).base(
 
 export default (req, res) => {
   if (req.method === 'GET') {
-    base('Mentors')
+    base('Matches')
       .select({
-        view: 'Mentors',
+        filterByFormula: `AND(StartupID="${req.query.startup}",{Mentor Response}="Yes")`,
       })
       .all()
       .then((records) => {
@@ -22,3 +22,5 @@ export default (req, res) => {
     });
   }
 };
+
+// AND(StartupID="recWwYNKJU852qjef",{Mentor Response}="Yes")
